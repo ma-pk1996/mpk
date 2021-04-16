@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+    background-image: url("../new/background.jpg");
+    
+}
+
+
+
+.topnav {
+    background-color: rgba(105, 144, 180, 0.521);
+    overflow: hidden;
+    border-radius: 7px;
+}
+    
+    /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: cornsilk;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5PX;
+}
+    
+    /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+    
+    /* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: cornflowerblue;
+    color: white;
+}
+    
+    /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+        display: none;
+}
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(3, 10, 17, 0.685);
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+}
+  /* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer p{
+    color: black;
+}
+
